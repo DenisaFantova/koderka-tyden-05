@@ -22,3 +22,53 @@ html { box-sizing: border-box; }
 }
 
 /* ---------------------------------------------------- */
+
+/*
+.prvni {
+	width:calc(100% / 3); /*podobné jako width: 33.333%
+}
+
+.druhy {
+	width: calc(50% - 100px);
+}
+
+.treti {
+	padding: calc(1em + 10px);
+}
+*/
+
+.kontejner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+	flex: 1 1 calc(100% / 4); /* 1-grow 1-shrink calc-flex basis*/
+}
+
+/*-------------------------------------*/
+
+.kontejner1 {
+	padding: 10px;
+	border: 1px dashed red;
+	background-color: #ffffcc;
+}
+
+.kontejner1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.box1 {
+	font: 30px/1 sans-serif;
+	font-weight: bold;
+	border: 1px solid black;
+	min-height: 100px;
+}
+
+.box1 {
+	flex: 0 0 calc((100% - 40px) / 3);
+}
+

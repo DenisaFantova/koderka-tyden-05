@@ -32,3 +32,36 @@ header > :last-child, footer > :last-child, article > :last-child, nav > :last-c
 	- 1000px
 */
 
+
+
+@media screen and (min-width: 640px) {
+
+	.obsah {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.hlavicka {
+	flex: 1 1 100%;
+	}
+	
+	.menu {
+		flex: 1 1 30%;
+	}
+
+	.clanek {
+		flex: 1 1 70%;
+	}
+}
+
+@media screen and (min-width: 100px) {
+	.menu,
+	.reklama {
+		flex: 1 1 20%;
+	}
+
+	.clanek {
+		flex: 1 1 60%;
+	}
+
+}
